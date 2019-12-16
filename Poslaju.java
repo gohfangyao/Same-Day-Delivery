@@ -50,6 +50,8 @@ else
       }
       else
         System.out.println("Invalid try again"); 
+    
+      sc.close();
    }
 	
 
@@ -149,10 +151,9 @@ Scanner sc=new Scanner(System.in);
 double weight = sc.nextDouble();
 
 System.out.println("Weigth : " + weight);
+sc.close();
 
 return weight;
-
-
 
 }
 
