@@ -1,0 +1,76 @@
+Start while (true) loop
+    Read weight, less than 0 to exit
+    If weight <0 then
+           Break loop and exit
+    Else
+           Read input to calculate, 1 local, 2 cross town, else invalid
+            If input =1 then 
+                 // Calculate local delivery
+                   If weight >0 and weight < 500 then
+                          Domesticcharge=...
+                          Surcharge=...
+                          Total=...
+                         Printlocalcharge 
+                  Else if weight >=500 and <750 then
+                         Domesticcharge=...
+                          Surcharge=...
+                          Total=...
+                           Printlocalcharge
+                  Else if weight >=750 and <=1000 then
+                         Domesticcharge=...
+                          Surcharge=...
+                          Total=...
+                           Printlocalcharge
+                   Else
+                          Print no rates available
+                   End if
+
+                   
+     
+       Else if input=2 then
+                 //Calculate crosstown delivery
+                   If weight >0 and weight < 500 then
+                          Domesticcharge=...
+                          Surcharge=...
+                          Total=...
+                           Printcrosstowncharge
+                  Else if weight >=500 and <750 then
+                         Domesticcharge=...
+                          Surcharge=...
+                          Total=...
+                          Printcrosstowncharge
+                  Else if weight >=750 and <=1000 then
+                         Domesticcharge=...
+                          Surcharge=...
+                          Total=...
+                          Printcrosstowncharge
+                   Else of weight
+                          Print no rates available
+                   End if weight
+           Else
+                 Print invalid, try again
+           End if
+          
+
+     
+End of while loop
+
+Printlocalcharge
+//Print local receipt
+                  Print local delivery charges
+                  Print local weight+weight
+                 Print local domestic charge+domesticCharge
+                  Print local surcharge+surcharge
+                  Print local total+total
+End printlocalcharge
+
+Printcrosstowncharge
+//Print crosstown receipt
+                  Print crosstown delivery charges
+                  Print crosstown weight+weight
+                 Print crosstown domestic charge+domesticCharge
+                  Print crosstown surcharge+surcharge
+                  Print crosstown total+total
+End printcrosstowncharge
+
+                  
