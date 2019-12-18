@@ -119,6 +119,7 @@ private static void printLocalTownReceipt(double wt) {
 	System.out.println("Local Town domestic charge is"+ domesticCharge);
 	System.out.println("Local Town surcharge is"+surcharge);
 	System.out.println("Local Town total is"+total);
+	System.out.println("Grant Total Price is" +(domesticCharge+surcharge+total));
 	}
 	
 	
@@ -160,6 +161,7 @@ private static void printCrossTownReceipt(double wt) {
 	System.out.println("Cross Town domestic charge is"+ domesticCharge);
 	System.out.println("Cross Town surcharge is"+surcharge);
 	System.out.println("Cross Town total is"+total);
+	System.out.println("Grant Total Price is" +(domesticCharge+surcharge+total));
 	}
 	
 
