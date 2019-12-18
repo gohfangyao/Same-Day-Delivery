@@ -1,7 +1,7 @@
 Start while (true) loop
     Read weight, less than 0 to exit
     If weight <0 then
-           Break loop and exit
+           Break loop and get inputs 1 to go to main menu subprogram, or 2 to exit subprogram
     Else
            Read input to calculate, 1 local, 2 cross town, else invalid
             If input =1 then 
