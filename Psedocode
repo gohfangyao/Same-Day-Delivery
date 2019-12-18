@@ -62,6 +62,7 @@ Printlocalcharge
                  Print local domestic charge+domesticCharge
                   Print local surcharge+surcharge
                   Print local total+total
+                  Print local grant total+grant total
 End printlocalcharge
 
 Printcrosstowncharge
@@ -71,6 +72,7 @@ Printcrosstowncharge
                  Print crosstown domestic charge+domesticCharge
                   Print crosstown surcharge+surcharge
                   Print crosstown total+total
+                  Print crosstown grant total+grant total
 End printcrosstowncharge
 
                   
