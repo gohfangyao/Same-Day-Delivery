@@ -31,8 +31,8 @@ break;
 else
 {
 	System.out.println("Enter 1 for local town, 2 for cross town");
-	Scanner sc = new Scanner(System.in);
 	
+	Scanner sc = new Scanner(System.in);
     String a;
     a = sc.nextLine();
     System.out.println("The entered integer is" + a);
@@ -51,12 +51,35 @@ else
       else
         System.out.println("Invalid try again"); 
     
-      sc.close();
+   
    }
 	
 
 }
+System.out.println("\n\n1.\t\t\tBack to Main Menu.");
+System.out.println("2.\t\t\tExit.");
+int menu;
+Scanner input=new Scanner(System.in);
 
+
+
+do{
+System.out.printf("Enter your chose you want\t\t\t:");
+menu = input.nextInt();
+}while(menu != 1 & menu != 2);
+
+//input.close();
+
+
+
+if ( menu==1 )
+{
+      MainMenu.main(args);
+}
+else
+{
+   Exit.main(args);
+}
 }
 
 
@@ -151,7 +174,7 @@ Scanner sc=new Scanner(System.in);
 double weight = sc.nextDouble();
 
 System.out.println("Weigth : " + weight);
-sc.close();
+//sc.close();
 
 return weight;
 
