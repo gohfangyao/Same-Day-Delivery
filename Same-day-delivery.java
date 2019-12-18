@@ -1,6 +1,10 @@
 import java.util.Scanner;
 public class Samedaydelivery
 {
+static double grandLocal = 0;
+static double grandCross = 0;
+static double grandBoth;
+
 public static void main(String args[])
 {
 	
@@ -35,7 +39,7 @@ else
 	Scanner sc = new Scanner(System.in);
     String a;
     a = sc.nextLine();
-    System.out.println("The entered integer is" + a);
+    System.out.println("The entered integer is " + a);
     
     
     if ("1".equals(a)){
@@ -53,9 +57,17 @@ else
     
    
    }
-	
-
 }
+/*Calculate Grand Total of both town*/
+grandBoth = grandLocal + grandCross;
+grandBoth = Math.round(grandBoth * 100.0) / 100.0;
+
+/*Display Grand Total for Both town*/
+System.out.printf("%25s\n","Receipt");
+System.out.println("Grand Total of Local Town\t:" +grandLocal);
+System.out.println("Grand Total of Cross Town\t:" +grandCross);
+System.out.println("Grand Total of both town\t:" +grandBoth);
+
 System.out.println("\n\n1.\t\t\tBack to Main Menu.");
 System.out.println("2.\t\t\tExit.");
 int menu;
@@ -85,7 +97,7 @@ else
 
 private static void printLocalTownReceipt(double wt) {
 	System.out.printf("Local Town Deliver Charge");
-	System.out.println("Local Town weight is"+wt);
+	System.out.println("Local Town weight is "+wt);
 	
 	
 	double domesticCharge=0;
@@ -116,10 +128,11 @@ private static void printLocalTownReceipt(double wt) {
 	System.out.println("No rates available");
 
 	}
-	System.out.println("Local Town domestic charge is"+ domesticCharge);
-	System.out.println("Local Town surcharge is"+surcharge);
-	System.out.println("Local Town total is"+total);
-	System.out.println("Grant Total Price is" +(domesticCharge+surcharge+total));
+	System.out.println("Local Town domestic charge is "+ domesticCharge);
+	System.out.println("Local Town surcharge is "+surcharge);
+	System.out.println("Local Town total is "+total);
+   grandLocal += total;
+	System.out.println("Grand Total Price is " +grandLocal);
 	}
 	
 	
@@ -127,7 +140,7 @@ private static void printLocalTownReceipt(double wt) {
 
 private static void printCrossTownReceipt(double wt) {
 	System.out.printf("Cross Town Deliver Charge");
-	System.out.println("Cross Town weight is"+wt);
+	System.out.println("Cross Town weight is "+wt);
 	
 	
 	double domesticCharge=0;
@@ -158,10 +171,11 @@ private static void printCrossTownReceipt(double wt) {
 	System.out.println("No rates available");
 
 	}
-	System.out.println("Cross Town domestic charge is"+ domesticCharge);
-	System.out.println("Cross Town surcharge is"+surcharge);
-	System.out.println("Cross Town total is"+total);
-	System.out.println("Grant Total Price is" +(domesticCharge+surcharge+total));
+	System.out.println("Cross Town domestic charge is "+ domesticCharge);
+	System.out.println("Cross Town surcharge is "+surcharge);
+	System.out.println("Cross Town total is "+total);
+   grandCross += total;
+	System.out.println("Grand Total Price is " +grandCross);
 	}
 	
 
