@@ -1,7 +1,18 @@
+Set grandLocal=0
+Set grandCross=0
+
 Start while (true) loop
     Read weight, less than 0 to exit
     If weight <0 then
-           Break loop and get inputs 1 to go to main menu subprogram, or 2 to exit subprogram
+           Break loop 
+           
+           Set 
+           grandBoth= grandLocal+grandCross
+           
+           print grand total of local town + grandLocal
+           print grand total of cross town + grandCross
+           print grand total of both town + grandBoth
+           
     Else
            Read input to calculate, 1 local, 2 cross town, else invalid
             If input =1 then 
@@ -25,7 +36,7 @@ Start while (true) loop
                           Print no rates available
                    End if
 
-                   
+                   Set grandLocal=grandLocal + Total
      
        Else if input=2 then
                  //Calculate crosstown delivery
@@ -51,7 +62,7 @@ Start while (true) loop
                  Print invalid, try again
            End if
           
-
+           Set grandCross = grandCross + Total
      
 End of while loop
 
