@@ -13,6 +13,7 @@ Start while (true) loop
            print grand total of cross town + grandCross
            print grand total of both town + grandBoth
            
+           Get input 1 to go to subprogram main menu, input 2 to go to subprogram exit
     Else
            Read input to calculate, 1 local, 2 cross town, else invalid
             If input =1 then 
